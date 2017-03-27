@@ -1,0 +1,25 @@
+{
+  "name": "payu/cardinfo-v2-client",
+  "description": "Card Info V2 Client",
+  "license": "Apache2",
+  "keywords": ["payu", "card info", "payment"],
+  "authors": [
+    {
+      "name": "PayU Romania",
+      "email": "support@payu.ro"
+    }
+  ],
+  "require": {
+    "php": ">=5.3",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "PayU\\": "src/PayU/",
+      "PayU\\Exceptions\\": "src/PayU/Exceptions"
+    }
+  }
+}
