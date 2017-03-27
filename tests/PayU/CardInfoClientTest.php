@@ -33,19 +33,19 @@ class CardInfoClientTest extends PHPUnit_Framework_TestCase
     public function setUp()
     {
 
-        $this->signatureCalculatorMock = $this->getMock(ParametersSignatureCalculator::class);
+        $this->signatureCalculatorMock = $this->createMock(ParametersSignatureCalculator::class);
         $this->signatureCalculatorMock->method('calculateSignature')->willReturn('CALCULATED_SIGNATURE');
 
-        $this->datetimeProviderMock = $this->getMock(DateTimeProvider::class);
+        $this->datetimeProviderMock = $this->createMock(DateTimeProvider::class);
         $this->datetimeProviderMock->method('getDatetime')->willReturn('999999');
 
-        $this->responseBuilderMock = $this->getMock(ResponseBuilder::class);
+        $this->responseBuilderMock = $this->createMock(ResponseBuilder::class);
         $this->responseBuilderMock->method('build')->willReturn($this->getResponseObject());
 
-        $this->requestMock = $this->getMock(Request::class);
+        $this->requestMock = $this->createMock(Request::class);
         $this->requestMock->method('getRequestParams')->willReturn([]);
 
-        $this->httpClientMock = $this->getMock(HTTPClient::class);
+        $this->httpClientMock = $this->createMock(HTTPClient::class);
         $this->httpClientMock->method('post')->willReturn($this->successResponseBody);
 
         $this->cardInfoClient = new CardInfoClient(
