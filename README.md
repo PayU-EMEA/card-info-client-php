@@ -9,15 +9,21 @@
 
 ## Composer
 
-You can install the library via [Composer](http://getcomposer.org/). Add this to your composer.json:
+You can install the library via [Composer](http://getcomposer.org/).
+1. By running
+```bash
+composer require payu/card-info-client-php
+```
+2. 
+ - Or by adding this to your composer.json
 
     {
       "require": {
-        "payu/card-info-client-php": "1.*"
+        "payu/card-info-client-php": "^0.1.0"
       }
     }
 
-Then install via:
+ - Then install via:
 
     composer install
 
