@@ -10,23 +10,24 @@
 ## Composer
 
 You can install the library via [Composer](http://getcomposer.org/).
-1. By running
+1. Method #1
+ - Run
 ```bash
 composer require payu/card-info-client-php
 ```
-2. 
- - Or by adding this to your composer.json
-
+2. Method #2
+ - Add this to your composer.json
+```bash
     {
       "require": {
         "payu/card-info-client-php": "^0.1.0"
       }
     }
-
+```
  - Then install via:
-
+```bash
     composer install
-
+```
 To use the library, include Composer's [autoload](https://getcomposer.org/doc/00-intro.md#autoloading]):
 
     require_once('vendor/autoload.php');
