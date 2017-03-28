@@ -32,6 +32,10 @@ To use the library, include Composer's [autoload](https://getcomposer.org/doc/00
 
     require_once('vendor/autoload.php');
 
+To use the examples, add the following to the example script:
+
+    require_once('/path/to/vendor/autoload.php');
+
 ## Manual Installation
 
 Obtain the latest version of the PayU Card Info V2 Client Library with:
@@ -41,6 +45,10 @@ Obtain the latest version of the PayU Card Info V2 Client Library with:
 To use the Library, add the following to your PHP script:
 
     require_once __DIR__ . '/path/to/card-info-client-php/src/init.php';
+
+To use the examples, add the following to the example script:
+
+    require_once __DIR__ . '/../src/init.php';
 
 ## Getting Started
 
