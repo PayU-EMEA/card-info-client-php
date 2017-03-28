@@ -14,7 +14,8 @@ You can install the library via [Composer](http://getcomposer.org/).
 ```bash
 composer require payu/card-info-client-php
 ```
-2. Or by adding this to your composer.json
+2. 
+ - Or by adding this to your composer.json
 ```bash
     {
       "require": {
