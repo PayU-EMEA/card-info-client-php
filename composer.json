@@ -1,7 +1,7 @@
 {
   "name": "payu/card-info-client-php",
   "description": "Card Info PHP Client",
-  "license": "Apache2",
+  "license": "Apache-2.0",
   "keywords": ["payu", "card info", "payment"],
   "authors": [
     {
